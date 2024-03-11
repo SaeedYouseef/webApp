@@ -6,39 +6,48 @@
     list-style: none;
 }
 
+body {
+    background-color: azure;
+}
+
 h1 {
-    text-align: center;
+    
     background-color: darkred;
     color: white;
     width: 80%;
-    margin: 50px auto;
-    padding: 20px;
+    margin: 20px auto;
+    padding: 20px 0;
     border-radius: 5px;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 div {
     width: 80%;
     margin: auto;
-    border: 2px solid darkred;
+    border: 2px dashed darkred;
     padding: 20px;
     text-align: center;
+    height: 80vh;
+    position: relative;
+    
 }
 
 h2 {
-    margin: 50px 0 30vh;
+    margin: 50px 0;
     color: darkred;
     font-size: 32px;
-    border: 2px solid darkred;
-    padding: 50px 10px;
+    border: 2px dashed darkred;
+    padding: 30px 10px;
 }
 
 button {
     text-align: center;
     background-color: darkred;
     color: white;
-    width: 40%;
-    padding: 20px;
+    width: fit-content;
+    padding: 20px 10px;
     border: none;
     outline: none;
     font-size: 18px;
@@ -46,6 +55,11 @@ button {
     transition: 0.3s;
     border-radius: 5px;
     font-size: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    
 }
 
 button:hover {
